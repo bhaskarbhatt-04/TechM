@@ -17,7 +17,7 @@ pipeline {
             steps {
                 // Build Docker image with application and testing tools
                 script {
-                    docker.build DOCKER_IMAGE_NAME, '-f addition/Dockerfile .'
+                    docker.build DOCKER_IMAGE_NAME, '-f TechM/addition/Dockerfile .'
                 }
                 // Run tests using pytest inside Docker container
                 script {
