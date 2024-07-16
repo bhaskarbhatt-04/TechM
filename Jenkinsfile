@@ -14,7 +14,7 @@ pipeline {
                 // Build Docker image
                 script {
                     docker.withRegistry('https://registry.example.com', 'docker-hub-credentials') {
-                        def customImage = docker.build('divide-app-image:latest', './path/to/your/dockerfile')
+                        def customImage = docker.build('divide-app-image:latest', '.Dockerfile')
                         customImage.push()
                     }
                 }
