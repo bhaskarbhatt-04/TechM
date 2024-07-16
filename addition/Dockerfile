@@ -1,4 +1,4 @@
-# Use an official Python runtime as a parent image
+# Start from a base Python image
 FROM python:3.9-slim
 
 # Set environment variables
@@ -8,13 +8,13 @@ ENV PYTHONUNBUFFERED 1
 # Set the working directory in the container
 WORKDIR /app
 
-# Install dependencies
-COPY requirements.txt /app/
-RUN pip install --upgrade pip && pip install -r requirements.txt
-    
-
-# Copy the application code into the container
+# Copy your application code to the container
 COPY . /app/
 
-# Run pytest for running tests
-CMD ["pytest"]
+# Expose the port your application runs on
+EXPOSE 8000
+
+
+
+# Specify the command to run your application
+CMD ["pytest","python", "manage.py", "runserver", "0.0.0.0:8000"]
