@@ -4,7 +4,7 @@ Inside the TechM repo I have created two branches
 
 Applications used => Docker Desktop, Jenkins, Django, Maven, VS Code.
 
-Steps for Django app -:
+*Steps for Django app -:*
 After installing Django and pytest , I made a project(root directory) named 'addition' within which I made an app named 'myapp' using django.
 Command : django-admin startproject addition
           django-admin startapp myapp
@@ -13,7 +13,7 @@ On creating a job (Addition_pipeline) in jenkins I installed necessary plugins a
 ![Screenshot (14)](https://github.com/user-attachments/assets/d93d1fc5-4be6-455e-ae1d-09ee55635b73)
 ![Screenshot (15)](https://github.com/user-attachments/assets/63d174a5-4455-4d56-8200-9c7db7aab716)
 
-Steps for Maven application -:
+*Steps for Maven application -:*
 After installing Maven and setting the path I 
 Command:
 1. mvn archetype:generate -DgroupId=com.example -DartifactId=division-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false // Make a Maven app
@@ -26,12 +26,12 @@ On creating a job (Division) in jenkins I installed necessary plugins and after 
 Commands used in both application to create Docker images : 
 1. docker build -t {image-name}-app .
 
-1. Docker image of Django app
+*1. Docker image proof of Django app*
    ![Screenshot (7)](https://github.com/user-attachments/assets/2f735f12-428d-4c07-9b7a-3fdb39e57be8)
 
-2. Docker image of Maven App
+*2. Docker image proof of Maven App*
    ![Screenshot (10)](https://github.com/user-attachments/assets/2c12f017-6892-44be-9b6b-ec5a805d0f40)
 
-Final view of Jenkins Dashboard
+*Final view of Jenkins Dashboard*
 ![Screenshot (20)](https://github.com/user-attachments/assets/3a247b93-daa5-45bd-9e1c-0c5a562f5f2b)
 
