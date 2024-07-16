@@ -13,7 +13,7 @@ pipeline {
             steps {
                 // Build Docker image
                 script {
-                    docker.withRegistry('https://registry.example.com', 'docker-hub-credentials') {
+                    docker.withRegistry('https://docker.io', 'docker-hub-credentials') {
                         def customImage = docker.build('divide-app-image:latest', '.Dockerfile')
                         customImage.push()
                     }
