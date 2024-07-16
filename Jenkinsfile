@@ -11,7 +11,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    docker.build('firstimg:latest', '-f addition/Dockerfile .')
+                    docker.build('firstimg:latest', '.addition/Dockerfile')
                 }
             }
         }
