@@ -2,14 +2,16 @@ Inside the TechM repo I have created two branches
 1. /main --> containing Django based web app that displays list of Books-Authors and made few test cases using pytest.
 2. /master --> containing Maven based application that calculates division of two numbers and verified using several test cases.
 
-Applications used => Docker Desktop, Jenkins, Django, Maven, VS Code.
+Utilities => Docker Desktop, Jenkins, Django, Maven, VS Code.
 
-*Steps for Django app -:*
+Steps for Django app -:
 After installing Django and pytest , I made a project(root directory) named 'addition' within which I made an app named 'myapp' using django.
-Command : django-admin startproject addition
-          django-admin startapp myapp
+Commands :
+ 1. django-admin startproject addition
+ 2. django-admin startapp myapp
 After successfully fetching lists of books and authors from the database, I tested the presence of books and authors in the app using pytest and it passed and created its docker-image using dockerhub.
 On creating a job (Addition_pipeline) in jenkins I installed necessary plugins and after setting paths and running batch commands I established pipeline and successfully run testing.
+
 ![Screenshot (14)](https://github.com/user-attachments/assets/d93d1fc5-4be6-455e-ae1d-09ee55635b73)
 ![Screenshot (15)](https://github.com/user-attachments/assets/63d174a5-4455-4d56-8200-9c7db7aab716)
 
